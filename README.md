@@ -39,21 +39,19 @@ npm run build
 
 ## Project Architecture
 
-src/
-├── components/
-│ ├── button/ # Reusable button components and related logic
-│ ├── forms/ # Invoice input forms and validation handling
-│ ├── offCanvas/ # Drawer components for creating/editing invoices
-│ └── modal/ # Confirmation modal (e.g., delete actions)
-│
-├── pages/
-│ ├── dashboard/ # Invoice list view with filtering functionality
-│ ├── invoice/ # Individual invoice detail page
-│ └── errors/ # Error handling pages (e.g., 404, fallback UI)
-│
-└── services/
-├── api/ # Thin abstraction layer over storage (future backend-ready)
-└── storage/ # LocalStorage-based invoice CRUD operations
+src
+├── components
+│ ├── button # Reusable button components and related logic
+│ ├── forms # Invoice input forms and validation handling
+│ ├── offCanvas # Drawer components for creating/editing invoices
+│ └── modal # Confirmation modal (e.g., delete actions)
+├── pages
+│ ├── dashboard # Invoice list view with filtering functionality
+│ ├── invoice # Individual invoice detail page
+│ └── errors # Error handling pages (e.g., 404, fallback UI)
+└── services
+├── api # Thin abstraction layer over storage (future backend-ready)
+└── storage # LocalStorage-based invoice CRUD operations
 
 ## How Data Is Stored
 

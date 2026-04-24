@@ -37,8 +37,11 @@ npm run dev
 npm run build
 ```
 
+---
+
 ## Project Architecture
 
+```
 src
 ├── components
 │ ├── button # Reusable button components and related logic
@@ -52,6 +55,9 @@ src
 └── services
 ├── api # Thin abstraction layer over storage (future backend-ready)
 └── storage # LocalStorage-based invoice CRUD operations
+```
+
+---
 
 ## How Data Is Stored
 

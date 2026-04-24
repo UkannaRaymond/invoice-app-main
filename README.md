@@ -22,7 +22,7 @@ A responsive full-stack invoice management application built with React + TypeSc
 ### Option 1 — Clone the repo
 
 ```bash
-git clone https://github.com/UkannaRaymond/INVOICE-APP-MAIN.git
+git clone https://github.com/UkannaRaymond/invoice-app-main.git
 cd invoice-app-main
 ```
 
@@ -40,21 +40,20 @@ npm run build
 ## Project Architecture
 
 src/
-│
 ├── components/
-│ ├── button - button functionalities
-│ ├── forms - input forms
-│ ├── offCanvas - create and edit invoice drawers
-│ └── Modal - delete confirmation modal
+│ ├── button/ # Reusable button components and related logic
+│ ├── forms/ # Invoice input forms and validation handling
+│ ├── offCanvas/ # Drawer components for creating/editing invoices
+│ └── modal/ # Confirmation modal (e.g., delete actions)
 │
 ├── pages/
-│ ├── dashboard - invoice list and filtering
-│ ├── invoice - invoice detail page
-| └── errors - handles error
+│ ├── dashboard/ # Invoice list view with filtering functionality
+│ ├── invoice/ # Individual invoice detail page
+│ └── errors/ # Error handling pages (e.g., 404, fallback UI)
 │
 └── services/
-├── api - thin compatibility wrappers around storage
-└── storage - localStorage-backed invoice CRUD
+├── api/ # Thin abstraction layer over storage (future backend-ready)
+└── storage/ # LocalStorage-based invoice CRUD operations
 
 ## How Data Is Stored
 
